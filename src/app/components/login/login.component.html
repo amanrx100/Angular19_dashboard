@@ -32,10 +32,10 @@
               >
             </p>
           </div>
-          <form action="">
+          <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
             <div class="mt-3">
               <label for="" class="form-lable" style="font-size: 16px"
-                >Email Address</label
+                >UserName</label
               >
               <input
                 type="text"
